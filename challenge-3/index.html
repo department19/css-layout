@@ -37,7 +37,7 @@
       color: white;
     }
 
-    .role {
+    .row {
       display: flex;
       flex-wrap: wrap;
       gap: 1rem;
@@ -52,6 +52,10 @@
       align-items: end;
     }
 
+    .justify-space-between {
+      justify-content: space-between;
+    }
+
     .justify-end {
       justify-content: flex-end;
     }
@@ -59,10 +63,10 @@
 </head>
 
 <body>
-  <header>
+  <header class="row justify-space-between">
     <a href="/" aria-label="Home">🐹</a>
     <nav>
-      <ul>
+      <ul class="row">
         <li><a href="#about">About</a></li>
         <li><a href="#work">Work</a></li>
         <li><a href="#blog">Blog</a></li>
